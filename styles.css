@@ -1,0 +1,135 @@
+/*CSS styling */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: teal;
+}
+
+a {
+  color: teal;
+}
+
+/* Header and navigation */
+header {
+  background-color: teal;
+  color: white;
+  padding: 1rem;
+}
+
+header p {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: darkorange;
+}
+
+/*  Main content */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Images and video */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/* Form */
+fieldset {
+  margin-bottom: 1rem;
+  border: 2px solid teal;
+}
+
+legend {
+  font-weight: bold;
+  color: teal;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input[type="radio"] + label {
+  display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  max-width: 100%;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: darkorange;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  main {
+    padding: 2rem;
+  }
+}
